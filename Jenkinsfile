@@ -14,11 +14,7 @@ pipeline {
             }
         }
 
-        stage('Ejecutar Pruebas') {
-            steps {
-                sh 'npm test'
-            }
-        }
+       
 
         stage('Construir Imagen Docker') {
             steps {

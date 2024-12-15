@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Clonar Código') {
             steps {
-                git 'https://github.com/Skarvy/apptestjenkins.git'
+                git branch: 'main', url: 'https://github.com/Skarvy/apptestjenkins.git'
             }
         }
 
